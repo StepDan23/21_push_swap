@@ -6,7 +6,7 @@
 /*   By: mmcclure <mmcclure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/18 15:48:34 by mmcclure          #+#    #+#             */
-/*   Updated: 2019/03/04 11:01:21 by mmcclure         ###   ########.fr       */
+/*   Updated: 2019/07/09 13:41:12 by mmcclure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ static void			pusw_lst_d_print(t_list *lst_a, t_list *lst_b)
 		}
 		else
 			b = NULL;
-		(a == NULL) ? printf("%-12s", "-") : printf("%-12d", *a);
-		(b == NULL) ? printf("%12s\n", "-") : printf("%+12d\n", *b);
+		(a == NULL) ? ft_printf("%-12s", "-") : ft_printf("%-12d", *a);
+		(b == NULL) ? ft_printf("%12s\n", "-") : ft_printf("%+12d\n", *b);
 	}
 	ft_printf("%s\n%-12s%12s\n\n", "________________________", "a", "b");
 }
@@ -63,7 +63,7 @@ static t_list		*pusw_read_ins(t_list **list_a, t_list **list_b, char *flag)
 			exit(0);
 		}
 		if (ft_strstr(flag, "c"))
-			ft_printf("The operation is - \033[0;32m%s\033[0;37m\n", ln);
+			ft_printf("The operation is - \033[0;32m%s\e[0m\n", ln);
 		free(ln);
 	}
 	return (ins);

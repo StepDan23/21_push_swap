@@ -6,7 +6,7 @@
 /*   By: mmcclure <mmcclure@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/24 17:41:18 by mmcclure          #+#    #+#             */
-/*   Updated: 2019/03/05 14:29:56 by mmcclure         ###   ########.fr       */
+/*   Updated: 2019/07/09 13:46:28 by mmcclure         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ void		del_content(void *content, size_t size)
 
 void		pusw_clean(t_list **lst_a, t_list **lst_b, t_list **lst_c)
 {
-	if (lst_a && !(*lst_a))
+	if (lst_a)
 		ft_lstdel(lst_a, &del_content);
-	if (lst_b && !(*lst_b))
+	if (lst_b)
 		ft_lstdel(lst_b, &del_content);
-	if (lst_c && !(*lst_c))
+	if (lst_c)
 		ft_lstdel(lst_c, &del_content);
 }
 
