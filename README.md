@@ -9,17 +9,14 @@ The goal is to sort array of integers using two staks.
 
 `./push_swap [array_of_int]` - show you commands for sorting array.
 
-   `[array_of_int]` - input array.
+         `[array_of_int]` - input array.
     
 `[comands] ./checker [-c][-v][array_of_int]` - return result `OK` or `KO` if they sorting input array.
 
-`[array_of_int]` - input array.
-
-`[comands]` - array of commands from stdin for sorting input array.
-
-`-c` - show in colours the last operation.
-
-`-v` - display the stack’s status after each operation.
+         `[array_of_int]` - input array.
+         `[comands]` - array of commands from stdin for sorting input array.
+         `-c` - show in colours the last operation.
+         `-v` - display the stack’s status after each operation.
 
 
 
